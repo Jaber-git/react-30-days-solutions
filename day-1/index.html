@@ -1,0 +1,71 @@
+<!DOCTYPE html> <html> 
+<head>  
+    <title>More Components!</title>
+
+  
+  <style>  
+   
+     </style> 
+</head> 
+<body>  <div id="container">
+
+</div> 
+
+    <script
+    crossorigin
+    src="https://unpkg.com/react@16/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin 
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  ></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+ 
+ <script type="text/babel"> 
+console.log(React);
+
+    //   // JSX element, header
+    //   const header = (
+    //     <header>
+    //       <div className='header-wrapper'>
+    //         <h1>Welcome to 30 Days Of React</h1>
+    //         <h2>Getting Started React</h2>
+    //         <h3>JavaScript Library</h3>
+    //         <p>Instructor: Asabeneh Yetayeh</p>
+    //         <small>Date: Oct 1, 2020</small>
+    //       </div>
+    //     </header>
+    //   );
+            var Square = (   <div style = { {    
+                                         height: 150,   
+                                        backgroundColor: "#FF6663"       }}> 
+                                <div >      
+                                 </div> 
+                            </div>    
+                          );
+
+    var Card = ( <div> 
+                   <div style={{
+                            height: 200,    
+                            width: 150,    
+                            padding: 0,    
+                             backgroundColor: "#FFF",   
+                              WebkitFilter: "drop-shadow(0px 0px 5px #666)",     
+                             filter: "drop-shadow(0px 0px 5px #666)"      }}  >      
+                     </div>  
+                 </div>         );
+
+   var mainCard=(
+        <div className='mainCard'>
+          {Card}
+          {Square}
+         
+        </div>
+      );
+
+               ReactDOM.render(   mainCard,
+                                   document.querySelector("#container")   ); 
+
+           </script>
+     </body> 
+</html>
