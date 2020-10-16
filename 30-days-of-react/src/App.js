@@ -14,27 +14,13 @@ const hexColor = () => {
         console.log(color);
        
    }
-   let colorCode ='#'+color;
+     let colorCode ='#'+color;
      
-   return colorCode;
+      return colorCode;
     };
 
-
-    const HexaColor = () => {
-      let hexaStyles = {
-        backgroundColor: hexColor() ,
-            }
-        console.log(hexaStyles.backgroundColor)
-      
-      return (  
-        <div> 
-           <div style={{backgroundColor: hexColor() } }> {hexColor()}</div>
-           <div style={{backgroundColor: hexColor() } }> {hexColor()}</div>
-           <div style={{backgroundColor: hexColor() } }> {hexColor()}</div>
-           <div style={{backgroundColor: hexColor() } }> {hexColor()}</div>
-         
-                                      </div>
-                          )};
+//functional component
+    const HexaColor = () => <div style={{backgroundColor: hexColor() } }> {hexColor()}</div> ;
 
 const headerStyles = {
   backgroundColor: '#61DBFB',
@@ -60,7 +46,9 @@ function App() {
     <div className="App">
       {header}
       <HexaColor/>
-      
+      <HexaColor/>
+      <HexaColor/>
+      <HexaColor/>
     </div>
   );
 }
