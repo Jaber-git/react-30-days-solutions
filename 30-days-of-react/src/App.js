@@ -1,56 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import ColorNumber from './solution-day-6/ColorNumber';
+import me from './images/me.jpg';
+import html from './images/hrml.jpg';
+import css from './images/css.jpg';
+import js from './images/js.png';
+import react from './images/react.png';
+
+
 import './App.css';
 
-
-//hexadecimal color generator
-
-const hexColor = () => {
-      let str='123456789abcdef';
-      let color="";
-      for (let i=0;i<6; i++){
-        let index=Math.floor(Math.random() * str.length);
-        color =color+str[index];
-        console.log(color);
-       
-   }
-     let colorCode ='#'+color;
-     
-      return colorCode;
-    };
-
-//functional component
-    const HexaColor = () => <div style={{backgroundColor: hexColor() } }> {hexColor()}</div> ;
-
-const headerStyles = {
-  backgroundColor: '#61DBFB',
-  fontFamily: 'Helvetica Neue',
-  padding: 25,
-  lineHeight: 1.5,
-  }
-  // JSX element, header
-  const header = (
-  <header style={headerStyles}>
-  <div className='header-wrapper'>
-  <h1>Welcome to 30 Days Of React</h1>
-  <h2>Getting Started React</h2>
-  <h3>JavaScript Library</h3>
-  <p>Asabeneh Yetayeh</p>
-  <small>Oct 2, 2020</small>
-  </div>
-  </header>
-        )
-
-function App() {
-  return (
-    <div className="App">
-      {header}
-      <HexaColor/>
-      <HexaColor/>
-      <HexaColor/>
-      <HexaColor/>
-    </div>
-  );
-}
+class App extends Component{ 
+  render() 
+  { 
+      return (<div><h2>Welcome to</h2> 
+      <ColorNumber title="GeeksforGeeks" title2="jaber" /></div>); 
+  } 
+} 
 
 export default App;
