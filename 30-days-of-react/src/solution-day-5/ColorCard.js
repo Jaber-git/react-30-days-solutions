@@ -41,8 +41,7 @@ const skills=[
            <div style={{ }}> 
               <div style={{backgroundColor: hexColor(),
                 padding: 25, } }> {hexColor()}</div> 
-           </div>
-          ;
+           </div> ;
   
   const headerStyles = {
     backgroundColor: '#61DBFB',
@@ -142,11 +141,11 @@ const skills=[
        //        <Header/>
        //        <Techs/>
        //         <HexaColor/>
-        //        <HexaColor/>
-        //        <HexaColor/>
-        //        <HexaColor/>
-         //       <Card/>
-         //       <Footer/>
-         //     </div>
-         //   );
-         // }
+       //        <HexaColor/>
+       //        <HexaColor/>
+       //        <HexaColor/>
+        //       <Card/>
+        //       <Footer/>
+       //     </div>
+        //   );
+        // }

@@ -12,7 +12,7 @@ import './App.css';
 class App extends Component{ 
   render() 
   { 
-      return (<div><h2>Welcome to</h2> 
+      return (<div>
       <ColorNumber title="GeeksforGeeks" title2="jaber" /></div>); 
   } 
 } 
