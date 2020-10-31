@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import ColorNumber from './solution-day-6/ColorNumber';
+import ColorNumber from './solution-day-7/ColorNumber';
+import Event from './solution-day-11/Event';
+import OnMouseEnter from './solution-day-11/OnMouseEnter';
+import EventExample from './solution-day-11/EventExample'
 import me from './images/me.jpg';
 import html from './images/hrml.jpg';
 import css from './images/css.jpg';
@@ -12,8 +15,14 @@ import './App.css';
 class App extends Component{ 
   render() 
   { 
-      return (<div>
-      <ColorNumber title="GeeksforGeeks" title2="jaber" /></div>); 
+      return (
+      
+      <div>
+     
+      <Event/>
+      <OnMouseEnter/>
+      < EventExample/>
+      </div>); 
   } 
 } 
 
